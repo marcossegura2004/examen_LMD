@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Asesoría Energética</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"> <!-- Referencia al archivo CSS personalizado -->
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Consulta de Asesoría Energética</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="cif">CIF</label>
+                <input type="text" class="form-control" id="cif" placeholder="Introduce el CIF">
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Introduce el Nombre">
+            </div>
+            <div class="form-group">
+                <label for="comercializadora">Comercializadora</label>
+                <input type="text" class="form-control" id="comercializadora" placeholder="Introduce la Comercializadora">
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <input type="text" class="form-control" id="estado" placeholder="Introduce el Estado">
+            </div>
+            <button type="submit" class="btn btn-primary">Buscar</button>
+        </form>
+
+        <h2 class="mt-5">Resultados de la Consulta</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>CIF</th>
+                    <th>Nombre</th>
+                    <th>CUPS</th>
+                    <th>Tarifa</th>
+                    <th>Comercializadora</th>
+                    <th>Comercial</th>   
+                </tr>
+            </thead>
+            <tbody id="resultsTableBody">
+                <!-- Aquí se insertarán los resultados -->
+            </tbody>
+        </table>
+
+    </div>
+    <div class="text-center mt-5">
+        <button class="btn btn-secondary" onclick="location.href='graficos.html'">Ver Gráficos</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

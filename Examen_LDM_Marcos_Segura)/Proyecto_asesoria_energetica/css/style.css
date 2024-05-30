@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4, #fad0c4); /* Gradiente de colores cálidos */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    animation: gradientMove 10s infinite linear; /* Animación para mover los colores de fondo */
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: #ffe4e1; /* Fondo rosa claro */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    flex: 1;
+    margin-top: 20px; /* Añadido para dejar un poco de espacio con la parte superior */
+    margin-bottom: 20px; /* Añadido para dejar un poco de espacio con la parte inferior */
+    transition: box-shadow 0.3s ease; /* Transición para el efecto de sombra */
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Aumenta la sombra cuando pasas el ratón sobre la caja */
+}
+
+h1 {
+    color: #2c3e50; /* Azul oscuro */
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.text-center.mt-5 {
+    margin-bottom: 20px; /* Añadido para dejar un poco de espacio con la parte inferior */
+}
+
+.btn-primary {
+    background-color: #e74c3c; /* Rojo brillante */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b; /* Rojo más oscuro */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #2c3e50; /* Azul oscuro */
+    color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
